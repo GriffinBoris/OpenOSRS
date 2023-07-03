@@ -43,7 +43,7 @@ public class MappingDumper
 
 		// MappingDump.of(ClassGroup) dumps everything completely
 		final MappingDump dump = new MappingDump().visitGroup(group);
-		dump.revision = Integer.parseInt(DeobProperties.getRevision());
+		dump.revision = Float.parseFloat(DeobProperties.getRevision());
 
 		log.info("RS version {}. Dump took {}", dump.revision, st.toString());
 		log.info("Total classes: {}. Total mapped classes: {}. ({}%)", dump.totalClasses, dump.totalNamedClasses, dump.totalNamedClasses * 100 / dump.totalClasses);

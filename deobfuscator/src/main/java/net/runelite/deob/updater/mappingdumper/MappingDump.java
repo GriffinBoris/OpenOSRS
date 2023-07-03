@@ -14,7 +14,7 @@ import static org.objectweb.asm.Opcodes.ACC_STATIC;
 
 public class MappingDump
 {
-	public int revision;
+	public float revision;
 
 	public int totalClasses = 0;
 	public int totalNamedClasses = 0;

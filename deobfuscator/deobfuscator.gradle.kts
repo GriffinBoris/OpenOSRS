@@ -114,7 +114,8 @@ tasks {
         args = listOf(
             "${buildDir.toString().replace("deobfuscator", "runescape-client")}/libs/runescape-client-$version.jar",
             "$buildDir/libs/deobfuscated-$version.jar",
-            "$buildDir/libs/updated-$version.jar"
+            "$buildDir/libs/updated-$version.jar",
+            "$buildDir/libs/mapping-$version.json"
         )
     }
 }
